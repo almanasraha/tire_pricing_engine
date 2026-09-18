@@ -1,0 +1,11 @@
+# Runtime dependency for api.py (the HTTP module meant to be integrated
+# into the website).
+Flask>=3.0
+
+# Only needed to render simulate.py's price-trajectory chart. Run
+# `python3 simulate.py --no-chart` to skip this entirely if you don't need it.
+matplotlib>=3.8
+
+# Everything else (data_generator.py, the engine/ package, database/, tests/)
+# uses only the Python standard library (sqlite3, dataclasses, datetime,
+# math, random, unittest) -- no other third-party packages required.
